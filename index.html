@@ -5,29 +5,51 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<div class="header">
-	<div class="header__brand">
+	<div class="header">
+		<div class="header__brand">
+			<h1>Wigi 4 You</h1>
+		</div>
+		<div class="header__menu">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Products</a></li>
+				<li><a href="">Team</a></li>
+				<li><a href="">Hiring</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
 		<h1>Wigi 4 You</h1>
-	</div>
-	<div class="header__menu">
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Products</a></li>
-			<li><a href="">Team</a></li>
-			<li><a href="">Hiring</a></li>
-		</ul>
-	</div>
-</div>
-<div class="main">
-	<h1>Wigi 4 You</h1>
-	<h2>Wigi4You is a Blockchain technology company, headquartered in Japan, with an office in United States, developing a suite of consumer focussed applications, specifically for payment
-processing.</h2>
-</div>
-<div class="about">
-	
-</div>
+		<h2>Wigi4You is a Blockchain technology company, headquartered in Japan, with an office in United States, developing a suite of consumer focussed applications, specifically for payment
+			processing.</h2>
+		</div>
+		<div class="about">
+			<div class="about__brand">
+				<h1>Wigi 4 You</h1>
+			</div>
+			<div class="about__description">
+				<p>is intended to give retail and e-commerce the ability to accept payment in bitcoin, other digital currencies or local currency (cash). We intend to disrupt the payments industry with the development of our blockchain products and services. We provide retail and e-commerce businesses the ability to accept payment in bitcoin, other digital currencies or local currency. WigiPay® adds a small surcharge on every transaction, much lower than traditional banks. Wigi4You believes customers and merchants should have the choice and flexibility to transact in the manner and currency that works best for them in a secure, convenient and cost-effective way. The goal of WigiPay® is to use blockchain technologies to disrupt the outdated, slow and costly payments industry.
+				</p>
+			</div>
+		</div>
+		<div class="include">
+			<p>Wigi4You products include <span>WigiPay</span>, <sapn>WigiWallet</sapn>, and <span>WigiPOS</span>. When used together,  consumers are able to pay for products and services using cryptocurrencies, and merchants are able to easily accept payment in cryptocurrency with settlement occurring in fiat currency.</p>
+		</div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var header = $(".header");
+				$(window).scroll(function() {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 240) {
+						header.addClass("border");
+					} else {
+						header.removeClass("border");
+					}
+				});
+			});
+		</script>
 
-</body>
-</html>
+	</body>
+	</html>
