@@ -419,6 +419,11 @@ h1 {
 	line-height: 26px;
 	font-weight: 400;
 	color: #646464;
+	margin-top: 0;
+}
+
+.hiring__item-list ul {
+	padding-left: 0;
 }
 
 .hiring__item-list li {
