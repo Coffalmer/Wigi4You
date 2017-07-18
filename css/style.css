@@ -134,19 +134,19 @@ h1, p {
 .products__item-1-bg {
 	background: url("../img/promo1.jpg");
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
 }
 
 .products__item-2-bg {
 	background: url("../img/promo2.jpg");
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
 }
 
 .products__item-1 img, .products__item-2 img {
@@ -250,8 +250,8 @@ h1, p {
 }
 
 .team__block-item li::before {
-  content: "- ";
-  color: #fff;
+	content: "- ";
+	color: #fff;
 }
 
 .investors {
@@ -286,7 +286,7 @@ h1, p {
 }
 
 .investors__about {
-		padding-top: 50px;
+	padding-top: 50px;
 }
 
 .investors__about p {
@@ -328,7 +328,7 @@ h1, p {
 }
 
 .investors__contact {
-		padding-top: 50px;
+	padding-top: 50px;
 }
 
 .investors__contact p {
@@ -396,4 +396,54 @@ h1, p {
 	background-color: #2899DA;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.contact {
+	background-color: #2899DA;
+	padding: 100px 5%;
+}
+
+.contact h1 {
+	font-size: 54px;
+	line-height: 58px;
+	font-weight: 800;
+	color: #FFF;
+	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.contact__content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact__form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.contact__form input {
+	max-width: 300px;
+	width: 100%;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
+}
+
+.contact__about {
+	width: 50%;
+}
+
+.contact__about img {
+	width: auto;
+	height: 100px;
 }
