@@ -431,19 +431,57 @@ h1, p {
 }
 
 .contact__form input {
-	max-width: 300px;
-	width: 100%;
-	-ms-box-sizing:content-box;
-	-moz-box-sizing:content-box;
-	-webkit-box-sizing:content-box; 
-	box-sizing:content-box;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	width: 400px;
+	padding: 10px 15px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: #95989A;
+}
+
+#message {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 80px;
+}
+
+#button {
+	background-color: transparent;
+	border-color: #FFFF02;
+	width: 434px;
 }
 
 .contact__about {
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact__about img {
-	width: auto;
-	height: 100px;
+	width: 60%;
+	margin-bottom: 50px;
+}
+
+.contact__time {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.about__time-clock, .about__time-date {
+	padding: 0 30px;
+}
+
+.contact__time p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	padding: 5px 0;
 }
