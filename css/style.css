@@ -395,6 +395,7 @@ h1, p {
 .contact {
 	background-color: #2899DA;
 	padding: 100px 5%;
+	padding-bottom: 50px;
 }
 
 .contact h1 {
@@ -405,6 +406,15 @@ h1, p {
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+#footer {
+	color: #FFFF02;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 100px;
 }
 
 .contact__content {
