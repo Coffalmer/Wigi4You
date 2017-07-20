@@ -21,7 +21,7 @@ h1, p {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .header img {
@@ -68,7 +68,7 @@ h1, p {
 	align-items: center;
 	padding: 0 5%;
 	height: 600px;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .main__content h1 {
@@ -126,7 +126,7 @@ h1, p {
 .promo {
 	background-color: #2899DA;
 	padding: 50px 5%;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .promo__content {
@@ -170,8 +170,15 @@ h1, p {
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(40, 153, 218, 0.6);
+	transition: all 0.3s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.products__item-1:hover, .products__item-2:hover {
 	background-color: rgba(40, 153, 218, 0.8);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .products__item-1-bg {
@@ -206,6 +213,7 @@ h1, p {
 	text-align: center;
 	padding: 0 5%;
 	margin-bottom: 30px;
+	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products__item-1 button, .products__item-2 button {
@@ -213,19 +221,32 @@ h1, p {
 	font-size: 24px;
 	line-height: 28px;
 	color: #fff;
-	padding: 15px 55px;
+	padding: 10px 55px;
 	border-radius: 5px;
 	border: none;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s;
 }
 
 .products__item-1 button {
 	background-color: #BE1617;
 }
 
+.products__item-1 button:hover {
+	background-color: #D30002;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
+}
+
 .products__item-2 button {
 	background-color: #80BE00;
+}
+
+.products__item-2 button:hover {
+	background-color: #7CB409;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .team {
@@ -304,6 +325,7 @@ h1, p {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .investors__content h1 {
@@ -352,16 +374,31 @@ h1, p {
 	margin-bottom: 20px;
 	border: none;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s;
+}
+
+.investors__about-button button:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 #button-one {
 	background-color: #2899DA;
+	border: 2px solid #2899DA;
+}
+
+#button-one:hover {
+	background-color: transparent;
 }
 
 #button-two {
 	background-color: transparent;
 	border: 2px solid #2899DA;
+}
+
+#button-two:hover {
+	background-color: #2899DA;
 }
 
 .investors__contact {
@@ -385,7 +422,6 @@ h1, p {
 }
 
 .hire {
-
 }
 
 .hire__content {
@@ -418,10 +454,6 @@ h1, p {
 }
 
 .hire__content button {
-	
-}
-
-.hire__content button {
 	font-family: "Raleway", sans-serif;
 	font-size: 20px;
 	line-height: 24px;
@@ -432,7 +464,13 @@ h1, p {
 	border: none;
 	background-color: #2899DA;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s;
+}
+
+.hire__content button:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .contact {
