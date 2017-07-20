@@ -490,10 +490,7 @@ h1, p {
 	padding: 5px 0;
 }
 
-@media only screen 
-and (min-device-width: 315px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
+@media (max-width: 600px) { 
 	.about__content-image {
 		width: 100%;
 	}
@@ -558,8 +555,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
 	}
 
 	.contact__time {
-    width: 100%;
-    justify-content: space-around;
+		width: 100%;
+		justify-content: space-around;
 	}
 
 	.about__time-clock, .about__time-date {
