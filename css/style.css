@@ -489,3 +489,81 @@ h1, p {
 	font-weight: 400;
 	padding: 5px 0;
 }
+
+@media only screen 
+and (min-device-width: 315px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+	.about__content-image {
+		width: 100%;
+	}
+
+	.about__content-image img {
+		width: 70%;
+		padding: 0 15%;
+	}
+
+	.about__content-text {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.promo {
+		padding: 80px 5%;
+	}
+
+	.products__item {
+		width: 100%;
+	}
+
+	.team__block-item {
+		width: 80%;
+		margin-bottom: 60px;
+	}
+
+	.investors__content h1 {
+		text-align: center;
+	}
+
+	.investors__about {
+		width: 100%;
+	}
+
+	.investors__about-button {
+		justify-content: space-around;
+	}
+
+	.investors__contact {
+		padding-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact__form {
+		width: 100%;
+	}
+
+	.contact__form input {
+		width: 100%;
+		padding: 10px 0px;
+		margin: 10px 0;
+	}
+
+	#button {
+		margin: 50px 25%;
+	}
+
+	.contact__about {
+		width: 100%;
+	}
+
+	.contact__time {
+    width: 100%;
+    justify-content: space-around;
+	}
+
+	.about__time-clock, .about__time-date {
+		padding: 0;
+	}
+
+}
