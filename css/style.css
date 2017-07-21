@@ -520,100 +520,117 @@ h1, p {
 
 .contact {
 	background-color: #2899DA;
-	padding: 100px 5%;
-	padding-bottom: 50px;
+	padding: 80px 5% 40px 5%;
+	width: 90%;
 }
 
 .contact h1 {
 	font-size: 54px;
 	line-height: 58px;
 	font-weight: 800;
-	color: #FFF;
+	color: #fff;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	text-align: center;
 	margin-bottom: 50px;
-}
-
-#footer {
-	color: #FFFF02;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 300;
-	text-align: center;
-	margin-top: 100px;
 }
 
 .contact__content {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
 }
 
 .contact__form {
 	width: 50%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
 }
 
-.contact__form input {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
-	width: 400px;
-	padding: 10px 15px;
-	margin: 10px 0;
+.contact__form input, .contact__form textarea {
+	width: 70%;
+	padding: 10px 5px;
+	margin: 10px 15%;
 	border-radius: 5px;
-	border-style: solid;
-	border-color: #95989A;
+	border: 2px solid #999999;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	background-color: #fff
+	color: #000000;
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-#message {
-	padding-top: 0px;
-	padding-bottom: 0px;
+.contact__form textarea {
 	height: 80px;
 }
 
-#button {
+.contact__form button {
+	width: 70%;
+	margin: 0 15%;
+	padding: 10px 15px;
 	background-color: transparent;
-	border-color: #FFFF02;
-	width: 434px;
+	border: 2px solid #FFFF02;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #FFFF02;
+	font-size: 20px;
+	line-height: 24px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s;
 }
 
-.contact__about {
+.contact__form button:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	0 10px 10px rgba(0,0,0,0.22);
+	background-color: #FFFF02;
+	color: #000;
+}
+
+.contact__info {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.contact__about img {
-	width: 60%;
-	margin-bottom: 50px;
+.contact__info img {
+	width: 50%;
+	margin: 0 25%;
 }
 
-.contact__time {
+.contact__block {
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 40px;
 }
 
-.about__time-clock, .about__time-date {
-	padding: 0 30px;
-}
-
-.contact__time p {
-	color: #fff;
-	font-size: 18px;
-	line-height: 22px;
+.contact__block p {
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFF;
 	font-weight: 400;
-	padding: 5px 0;
+}
+
+.contact__block-time, .contact__block-adress {
+	width: 50%;
+}
+
+#footer {
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFF02;
+	text-align: center;
+	margin-top: 30px;
 }
 
 @media (max-width: 850px) { 
@@ -695,29 +712,16 @@ h1, p {
 
 	.contact__form {
 		width: 100%;
+		margin-bottom: 50px;
 	}
 
-	.contact__form input {
-		width: 100%;
-		padding: 10px 0px;
-		margin: 10px 0;
-	}
-
-	#button {
-		margin: 50px 25%;
-	}
-
-	.contact__about {
+	.contact__info {
 		width: 100%;
 	}
 
-	.contact__time {
-		width: 100%;
-		justify-content: space-around;
-	}
-
-	.about__time-clock, .about__time-date {
-		padding: 0;
+	.contact__block-time, .contact__block-adress {
+	width: 100%;
+	margin: 20px auto;
 	}
 
 }

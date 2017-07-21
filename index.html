@@ -3,9 +3,9 @@
 <head>
 	<title>Wigi 4 You</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=0, user-scalable=no">
 </head>
 <body>
 	<div class="header" id="navigation">
@@ -133,39 +133,48 @@
 		</div>
 	</div>
 	<div class="contact" id="contact">
-		<h1>Contact us</h1>
+		<h1>Contact Us</h1>
 		<div class="contact__content">
 			<div class="contact__form">
-				<form>
-					<input type="name" name="name" placeholder="Name">
-					<input type="email" name="email" placeholder="Email">
-					<input type="message" name="message" id="message" placeholder="Message">
-					<input type="button" id="button" name="button" value="Send">
+				<form method="POST" action="http://formspree.io/imikailoby@gmail.com">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="_replyto" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button type="submit" value="Send">Send</button>
 				</form>
 			</div>
-			<div class="contact__about">
+
+			<div class="contact__info">
 				<img src="img/logo.png" alt="logo">
-				<div class="contact__time">
-					<div class="about__time-clock">
+				<div class="contact__block">
+					<div class="contact__block-adress">
 						<p>3F 111 BLDG 5-2-1 Chome,</p>
-						<p>Asakusabashi, Taito-ku, </p>
+						<p>Asakusabashi, Taito-ku,</p>
 						<p>Tokyo - TO 111-0053, Japan</p>
 					</div>
-					<div class="about__time-date">
-						<p>Monday - Friday: 9am - 5pm</p>
-						<p>Saturday: By appointment</p>
-						<p>Sunday: Closed</p>
+					<div class="contact__block-time">
+						<p>Monday - Sunday:</p>
+						<p>by appointment only.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<p id="footer">2017 Wigi4You © All Rights Reserved.</p>
+		<p id="footer">© 2017 Wigi4You - All Rights Reserved</p>
+		
 	</div>
 
 
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	 <script type="text/javascript">
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#navigation").on("click","a", function (event) {
 				event.preventDefault();
@@ -185,7 +194,7 @@
 					header.addClass("header__scroll").removeClass("header");
 				} else {
 					header.addClass("header").removeClass("header__scroll");
-					}
+				}
 			});
 		});
 	</script>
