@@ -207,13 +207,13 @@ h1, p {
 
 .products__item-1, .products__item-2 {
 	width: 100%;
-	height: 400px;
-	display: flex;
+	min-height: 450px;
 	padding: 50px 0;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	background-color: rgba(40, 153, 218, 0.6);
 	transition: all 0.3s;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -222,7 +222,7 @@ h1, p {
 .products__item-1:hover, .products__item-2:hover {
 	background-color: rgba(40, 153, 218, 0.8);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-	0 10px 10px rgba(0,0,0,0.22);
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .products__item-1-bg {
@@ -231,7 +231,6 @@ h1, p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
 }
 
 .products__item-2-bg {
@@ -240,12 +239,10 @@ h1, p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
 }
 
 .products__item-1 img, .products__item-2 img {
-	max-width: 60%;
-	max-height: 100px;
+	width: 60%;
 	margin-bottom: 30px;
 }
 
@@ -256,7 +253,6 @@ h1, p {
 	color: #fff;
 	text-align: center;
 	padding: 0 5%;
-	margin-bottom: 30px;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -280,7 +276,7 @@ h1, p {
 .products__item-1 button:hover {
 	background-color: #D30002;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-	0 10px 10px rgba(0,0,0,0.22);
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .products__item-2 button {
@@ -290,7 +286,7 @@ h1, p {
 .products__item-2 button:hover {
 	background-color: #7CB409;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-	0 10px 10px rgba(0,0,0,0.22);
+				0 10px 10px rgba(0,0,0,0.22);
 }
 
 .team {
@@ -630,7 +626,7 @@ h1, p {
 	line-height: 20px;
 	color: #FFFF02;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 90px;
 }
 
 @media (max-width: 850px) { 
@@ -715,6 +711,11 @@ h1, p {
 		margin-bottom: 50px;
 	}
 
+	.contact__form input, .contact__form textarea, .contact__form button {
+		width: 90%;
+		margin: 10px 5%;
+	}
+
 	.contact__info {
 		width: 100%;
 	}
@@ -722,6 +723,10 @@ h1, p {
 	.contact__block-time, .contact__block-adress {
 	width: 100%;
 	margin: 20px auto;
+	}
+
+	#footer {
+	margin-top: 30px;
 	}
 
 }
