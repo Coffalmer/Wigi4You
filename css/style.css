@@ -729,5 +729,9 @@ h1, p {
 	margin-top: 30px;
 	}
 
-}
+	.team__content h1, .investors__content h1, .hire__content h1, .contact h1 {
+		font-size: 44px;
+		line-height: 48px;
+	}
 
+}
