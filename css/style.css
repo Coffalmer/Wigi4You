@@ -11,10 +11,24 @@ h1, p {
 }
 
 .header {
-	position: fixed;
+	position: absolute;
 	background-color: rgba(40, 153, 218, 0.9);
 	width: 90%;
 	height: 100px;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.header__scroll {
+	position: fixed;
+	background-color: rgba(40, 153, 218, 0.9);
+	width: 90%;
+	height: 60px;
 	padding: 0 5%;
 	display: flex;
 	flex-direction: row;
@@ -28,11 +42,24 @@ h1, p {
 	height: 60px;
 }
 
+.header__scroll img {
+	height: 40px;
+}
+
 .header ul {
 	list-style: none;
 }
 
+.header__scroll ul {
+	list-style: none;
+}
+
 .header li {
+	float: left;
+	padding: 0 10px;
+}
+
+.header__scroll li {
 	float: left;
 	padding: 0 10px;
 }
@@ -46,7 +73,22 @@ h1, p {
 	text-decoration: none;
 }
 
+.header__scroll a {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 600;
+	color: #fff;
+	transition: color 0.5s;
+	text-decoration: none;
+}
+
 .header a:hover {
+	color: #FFFF06;
+	border-bottom: 1px solid #FFFF06;
+	padding-bottom: 2px;
+}
+
+.header__scroll a:hover {
 	color: #FFFF06;
 	border-bottom: 1px solid #FFFF06;
 	padding-bottom: 2px;
@@ -125,7 +167,7 @@ h1, p {
 
 .promo {
 	background-color: #2899DA;
-	padding: 50px 5%;
+	padding: 80px 5%;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
@@ -320,7 +362,7 @@ h1, p {
 
 .investors__content {
 	background-color: rgba(0, 0, 0, 0.9);
-	padding: 5%;
+	padding: 100px 5%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -571,7 +613,7 @@ h1, p {
 	padding: 5px 0;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 850px) { 
 	.about__content-image {
 		width: 100%;
 	}
