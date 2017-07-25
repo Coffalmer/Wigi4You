@@ -324,6 +324,10 @@ h1, p {
 .team__block-item {
 	width: 40%;
 	min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .team__block-item h2 {
@@ -331,14 +335,30 @@ h1, p {
 	line-height: 28px;
 	font-weight: 700;
 	color: #fff;
+	text-align: center;
 	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team__block-item p {
+	text-align: center;
 	font-size: 20px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #FFFF06;
+}
+
+.team__block-item img {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	transition: box-shadow 0.3s;
+}
+
+.team__block-item img:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	0 10px 10px rgba(0,0,0,0.22);
 }
 
 .team__block-item ul {
@@ -698,6 +718,7 @@ h1, p {
 
 	.investors__about {
 		width: 100%;
+		text-align: center;
 	}
 
 	.investors__about-button {
