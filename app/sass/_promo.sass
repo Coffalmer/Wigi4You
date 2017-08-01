@@ -1,0 +1,27 @@
+.promo
+    width: 100%
+    height: auto
+    background-image: url("../img/main.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+
+    &__content
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        background-color: $blueColorOpacity
+        padding: 15% 5%
+    
+        h1, p
+            color: $whiteColor
+            text-align: center
+        
+        p
+            padding: 0 2rem
+            font-weight: 500
+        
+        @media screen and (max-width: 800px)
+            p
+                padding: 0

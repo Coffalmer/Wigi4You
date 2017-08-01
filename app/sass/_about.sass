@@ -1,0 +1,32 @@
+.about
+    width: 100%
+    height: auto
+
+    &__content
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: flex-start
+        padding: 10% 5%
+
+        &-block
+            width: 45%
+
+            img
+                width: 90%
+
+            p
+                width: 90%
+                font-weight: 300
+                color: $grayColor
+                margin: 0
+
+            @media screen and (max-width: 800px)
+                width: 100%
+
+                img
+                    margin: 0 5% 10% 5%
+
+                p
+                    margin: 0 5%
